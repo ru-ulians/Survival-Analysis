@@ -523,7 +523,7 @@ We use the `randomForestSRC` package in R [@randomForestSRC]. To improve model p
 library(randomForestSRC)
 set.seed(710)
 # Build ntree 500, nodesize 2 mtry 1 nsplit 10
-rsf_fit <- rfrc(Surv(y, failed) ~ sex,
+rsf_fit <- rfsrc(Surv(y, failed) ~ sex,
               data = sim_data$data,
               ntree = 500,
               nodesize = 2,
